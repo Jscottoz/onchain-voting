@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+onchain_voting = "5EFU5YKnZgzLNfYi5Kf2gaEp3apYZNNgWSGm91kLnwM1"
+
+[registry]
+url = "https://api.devnet.solana.com"
+
+[provider]
+cluster = "devnet"
+wallet = "id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
